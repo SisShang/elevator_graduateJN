@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">elevator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ip">"172.22.93.210"</string>
+    
+    <!-- activity_main.xml -->
+    <string name="UserName">用户名</string>
+    <string name="Password">密码</string>
+    <string name="Role">请选择登录身份</string>
+    <string name="Inspect">报检人员</string>
+    <string name="Check">校验人员</string>
+    <string name="Audit">审核人员</string>
+    <string name="Login">登录</string>
+    <string name="Regist">注册</string>
+    <string name="WorkNo">工号</string>
+    <string name="MakeSure">确认</string>
+    <string name="ipIn">click to change the IP</string>
+    <string name="UserKnow">欢迎使用手机电梯限速器校验APP\n如果您是首次的登录，请先填写报检单位及以下的所有信息，填写完成后点击添加设备信息并校验按钮，我们会将您的信息添加到数据库中并且返回给您一个设备号\n再次使用您可以直接输入设备号并点击调出设备，我们会为您自动填充相关的设备信息</string>
+    
+    <!-- missionReceive.xml -->   
+    <string name="Download">下载</string>
+    <string name="Choose">选择任务</string>
+    
+    <!-- check_choose.xml -->   
+    <string name="MissionReceive">接收任务</string>
+    <string name="CheckNow">开始校验</string>
+     
+    <!-- check_inspect.xml -->   
+    <string name="Information">请输入基本信息：</string>
+    <string name="ReportNo">校验流水号</string>    
+    <string name="ReportNo1">报告编号</string>
+    <string name="Unit">报检单位</string>
+    <string name="Address">单位地址</string>
+    <string name="Contact">联系人</string>   
+    <string name="PhoneNo">联系电话</string> 
+    <string name="Read">初次使用，请阅读使用说明</string>
+    <string name="Get">调出设备</string>    
+    <string name="Add">添加设备信息并申请校验</string>
+    <string name="Apply">申请校验</string>
+    <string name="ReGet">调出错误重新调出</string>
+    
+    <!-- check_check_now.xml -->  
+    <string name="CheckOneNow">请选择一项开始校验</string> 
+    <string name="CheckName">校验人员姓名</string>
+    <string name="DeviceName">使用的仪器设备</string>
+    <string name="DeviceNo">设备档案号</string>
+    <string name="GovernorSpec">限速器型号规格</string>
+    <string name="GovernorNo">限速器产品编号</string>
+    <string name="ProduceTime">制造日期</string>   
+    <string name="ProduceUnit">制造单位</string>    
+    <string name="GovernorDiameter">限速器直径(mm)</string>
+    <string name="GovernorPerimeter">限速器周长(mm)</string>   
+    <string name="Speed">额定速度(m/s)</string>
+    <string name="SafeType">操纵的安全钳装置的类型:</string>    
+    <string name="JianJin">渐进式</string>
+    <string name="BuKeTuo">不可脱落滚柱式瞬时式</string>   
+    <string name="ShunShi">除了不可脱落滚柱式以外的瞬时式</string>
+    <string name="Submit">提交</string>
+    
+    <!-- check_check_start1.xml -->   
+    <string name="CarSafe">轿厢安全钳校验</string>
+    <string name="SpeedTime">实时转速(v/min)</string>
+    <string name="Speed1">第1次速度(m/s)</string>
+    <string name="Speed2">第2次速度(m/s)</string>   
+    <string name="Speed3">第3次速度(m/s)</string> 
+    <string name="SpeedAve">平均速度(m/s)</string>   
+    <string name="Next">下一项</string> 
+    
+    <!-- check_check_start1.xml -->   
+    <string name="CounterWeight">对重安全钳校验</string>
+    <string name="OverSpeed">超速保护校验</string>
+    <string name="IsOK">是否合格</string> 
+    
+     <!-- activity_succeed.xml -->   
+    <string name="Succeed">下载成功</string>
+    <string name="Look">查看已下载的任务</string>
+    <string name="Failed">下载失败，请重新下载</string>
+    <string name="goBack">返回重新下载</string>
+    
+    <!-- audit_receive.xml -->   
+    <string name="CarSpeedTime">轿厢安全钳实时转速(v/min)</string>
+    <string name="CarSpeed1">轿厢安全钳第1次速度(m/s)</string>
+    <string name="CarSpeed2">轿厢安全钳第2次速度(m/s)</string>   
+    <string name="CarSpeed3">轿厢安全钳第3次速度(m/s)</string> 
+    <string name="CarSpeedAve">轿厢安全钳平均速度(m/s)</string>  
+    <string name="CounterSpeedTime">对重安全钳实时转速(v/min)</string>
+    <string name="CounterSpeed1">对重安全钳第1次速度(m/s)</string>
+    <string name="CounterSpeed2">对重安全钳第2次速度(m/s)</string>   
+    <string name="CounterSpeed3">对重安全钳第3次速度(m/s)</string> 
+    <string name="CounterSpeedAve">对重安全钳平均速度(m/s)</string>  
+    <string name="OverSpeedTime">超速保护装置实时转速(v/min)</string>
+    <string name="OverSpeed1">超速保护装置第1次速度(m/s)</string>
+    <string name="OverSpeed2">超速保护装置第2次速度(m/s)</string>   
+    <string name="OverSpeed3">超速保护装置第3次速度(m/s)</string> 
+    <string name="OverSpeedAve">超速保护装置平均速度(m/s)</string>  
+    <string name="SendSucceed">合格</string> 
+    <string name="SendFailed">不合格</string>   
+        
+     <!-- activity_succeed.xml -->   
+    <string name="AuditSucceed">发送成功</string>
+    <string name="GoAudit">返回</string>
+    <string name="DataFailed">短信发送成功，但数据库修改失败\n请返回重新修改</string>
+    <string name="Reload">点击重新修改</string>
+    <string name="succ">提交成功，请等待审核，审核结果会短信通知您</string>
+    
+</resources>

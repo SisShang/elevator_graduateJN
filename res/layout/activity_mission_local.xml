@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!--item -->  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="50dip"
+    android:orientation="horizontal" >
+  <CheckBox
+      	android:id="@+id/item_cb"  
+        android:layout_width="80dp"  
+        android:layout_height="wrap_content"  
+        android:gravity="center" 
+        android:focusable="false"      
+        android:focusableInTouchMode="false"      
+        android:clickable="false"         >
+         </CheckBox>
+<com.view.checkGoCHS
+        android:id="@+id/item_scroll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            
+                      
+   <!-- 报告编号 -->  
+  <TextView  
+   android:layout_width="130dp"  
+   android:layout_height="wrap_content"  
+   android:id="@+id/reportNoItem"  
+   android:gravity="center"
+  /> 
+   <!-- 单位 -->  
+  <TextView  
+   android:layout_width="130dp"  
+   android:layout_height="wrap_content"  
+   android:id="@+id/unitItem"  
+   android:gravity="center" 
+  />  
+  <!-- 地址 -->  
+  <TextView  
+   android:layout_width="150dp"  
+   android:layout_height="wrap_content"  
+   android:id="@+id/addressItem" 
+   android:gravity="center"  
+  />  
+  <!-- 联系人 -->  
+  <TextView  
+   android:layout_width="130dp"  
+   android:layout_height="wrap_content"  
+   android:id="@+id/contactItem"   
+   android:gravity="center"
+  />   
+  <!-- 电话 -->  
+  <TextView  
+   android:layout_width="130dp"  
+   android:layout_height="wrap_content"  
+   android:id="@+id/phoneNoItem" 
+   android:gravity="center"  
+  />  <!--6.设备档案号 -->
+        <TextView
+        	android:id="@+id/deviceNoItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center"   />
+        <!--7.限速器型号规格 -->
+        <TextView
+        	android:id="@+id/governorSpecItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center"  />
+         <!-- 8.限速器产品编号-->
+        <TextView
+        	android:id="@+id/governorNoItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center"  />
+         <!--9.制造日期 -->
+        <TextView
+        	android:id="@+id/produceTimeItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center" />
+        <!--10.制造单位 -->
+        <TextView
+        	android:id="@+id/produceUnitItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center"  />
+        <!--11.限速器直径 -->
+        <TextView
+        	android:id="@+id/governorDiameterItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center"  />
+        <!--12.限速器周长 -->
+        <TextView
+        	android:id="@+id/governorPerimeterItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center"  />
+         <!--13.额定速度 -->
+        <TextView
+        	android:id="@+id/speedItem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+  			android:gravity="center"   />
+  
+  </LinearLayout>
+  </com.view.checkGoCHS>
+  </LinearLayout>

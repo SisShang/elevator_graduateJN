@@ -1,0 +1,114 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+<TableRow>
+        <TextView
+      		android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/userNameIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名"
+            android:selectAllOnFocus="true" />
+        </TableRow>
+    
+    <TableRow> <!-- 第二行，输入密码 -->
+        <TextView
+        	android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/passwordIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true"/>
+        </TableRow>
+        
+    <TableRow> <!-- 第二行，输入工号 -->
+        <TextView
+        	android:id="@+id/workNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/workNoIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="校验、审核人员输入"/>
+        </TableRow>
+    
+    <TableRow> <!-- 第二行，输入单位 -->
+        <TextView
+        	android:id="@+id/unit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/unitIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="报检人员输入"/>
+        </TableRow>
+    
+    <TableRow> <!-- 第二行，输入电话 -->
+        <TextView
+        	android:id="@+id/phoneNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/phoneNoIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:phoneNumber="true"/>
+    </TableRow>
+    <TableRow>  <!-- 单选框选择身份 -->
+        <TextView
+        	android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+    </TableRow>
+    <TableRow>
+        <!-- 定义一组单选按钮 -->
+        <RadioGroup
+            android:id="@+id/roleIn"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+            <RadioButton
+                android:id="@+id/inspect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/audit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </RadioButton>
+        </RadioGroup>
+    </TableRow>
+    <Button
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="#aaaaaa" />
+
+</TableLayout>

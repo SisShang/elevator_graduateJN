@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+        <Button
+            android:id="@+id/sendSucceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/sendFailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sendSucceed"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/sendSucceed"
+            android:gravity="center" />
+
+
+    <FrameLayout
+         android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/sendFailed">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#a0a0a0"
+            android:orientation="horizontal" >
+
+            <!-- 选择 -->
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="选择"
+                android:textColor="#850" />
+
+            <com.view.auditCHS
+                android:id="@+id/item_scroll_title"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <!-- 报告编号 -->
+
+                    <TextView
+                        android:id="@+id/reportNo"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 单位 -->
+
+                    <TextView
+                        android:id="@+id/unit"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 地址 -->
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 联系人 -->
+
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 电话 -->
+
+                    <TextView
+                        android:id="@+id/phoneNo"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 6.设备档案号 -->
+
+                    <TextView
+                        android:id="@+id/deviceNo"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 7.限速器型号规格 -->
+
+                    <TextView
+                        android:id="@+id/governorSpec"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 8.限速器产品编号 -->
+
+                    <TextView
+                        android:id="@+id/governorNo"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 9.制造日期 -->
+
+                    <TextView
+                        android:id="@+id/produceTime"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 10.制造单位 -->
+
+                    <TextView
+                        android:id="@+id/produceUnit"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 11.限速器直径 -->
+
+                    <TextView
+                        android:id="@+id/governorDiameter"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 12.限速器周长 -->
+
+                    <TextView
+                        android:id="@+id/governorPerimeter"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 13.额定速度 -->
+
+                    <TextView
+                        android:id="@+id/speed"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 14.轿厢安全钳实时转速 -->
+
+                    <TextView
+                        android:id="@+id/carSpeedTime"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 15.轿厢第一次速度 -->
+
+                    <TextView
+                        android:id="@+id/carSpeed1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 16.轿厢第二次速度 -->
+
+                    <TextView
+                        android:id="@+id/carSpeed2"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 17.轿厢第三次速度 -->
+
+                    <TextView
+                        android:id="@+id/carSpeed3"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 18.轿厢平均速度 -->
+
+                    <TextView
+                        android:id="@+id/carSpeedAve"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 19.对重安全钳实时转速 -->
+
+                    <TextView
+                        android:id="@+id/counterSpeedTime"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 20.对重第一次速度 -->
+
+                    <TextView
+                        android:id="@+id/counterSpeed1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 21.对重第二次速度 -->
+
+                    <TextView
+                        android:id="@+id/counterSpeed2"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 22.对重第三次速度 -->
+
+                    <TextView
+                        android:id="@+id/counterSpeed3"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 23.对重平均速度 -->
+
+                    <TextView
+                        android:id="@+id/counterSpeedAve"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 24.超速保护实时转速 -->
+
+                    <TextView
+                        android:id="@+id/overSpeedTime"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 25.超速第一次速度 -->
+
+                    <TextView
+                        android:id="@+id/overSpeed1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 26.超速第二次速度 -->
+
+                    <TextView
+                        android:id="@+id/overSpeed2"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 27.超速第三次速度 -->
+
+                    <TextView
+                        android:id="@+id/overSpeed3"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                    <!-- 28.超速平均速度 -->
+
+                    <TextView
+                        android:id="@+id/overSpeedAve"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#850" />
+                </LinearLayout>
+            </com.view.auditCHS>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- ListView控件 -->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_below="@+id/frame"/>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.check.CheckStartActivity1" >
+
+    <TableRow> <!--第 一行，轿厢安全钳校验 -->
+        <TextView
+      		android:id="@+id/carSafe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+    </TableRow>
+     <TableRow> <!-- 1.报告编号-->
+        <TextView
+        	android:id="@+id/reportNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/reportNoIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow> <!-- 1.实时转速-->
+        <TextView
+        	android:id="@+id/speedTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/speedTimeIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  
+            android:numeric="decimal"/>
+    </TableRow>
+    <TableRow> <!--第一次速度 -->
+        <TextView
+        	android:id="@+id/speed1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/speed1In"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"   
+            android:numeric="decimal"/>
+    </TableRow>
+    <TableRow> <!-- 第二次速度-->
+        <TextView
+        	android:id="@+id/Speed2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/speed2In"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numeric="decimal"/>
+    </TableRow>
+    <TableRow> <!-- 第三次速度-->
+        <TextView
+        	android:id="@+id/speed3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/speed3In"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numeric="decimal"/>
+    </TableRow>
+    
+    <TableRow> <!-- 是否合格-->
+        <TextView
+        	android:id="@+id/isOK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+        <EditText
+        	android:id="@+id/isOKIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请填写合格/不合格"/>
+    </TableRow>
+    
+    
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="#aaaaaa" />
+
+</TableLayout>

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+    
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="限速器校验报告" />
+
+        <TextView
+            android:id="@+id/reportNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/report"
+            android:layout_toRightOf="@+id/report"
+            android:text="报告编号" />
+
+        <TextView
+            android:id="@+id/reportNoIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reportNo"
+            android:layout_alignBottom="@+id/reportNo"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/reportNo"
+            android:gravity="center"
+            android:text="编号" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reportNoIn"
+            android:layout_toLeftOf="@+id/contactIn"
+            android:gravity="center"
+            android:text="委托单位地址" />
+
+        <TextView
+            android:id="@+id/addressIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/address"
+            android:layout_alignBottom="@+id/address"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/address"
+            android:gravity="center"
+            android:text="江苏省无锡市滨湖区蠡湖大道1800号" />
+
+        <TextView
+            android:id="@+id/contactIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contact"
+            android:layout_alignTop="@+id/contact"
+            android:layout_toLeftOf="@+id/phoneNo"
+            android:layout_toRightOf="@+id/contact"
+            android:gravity="center"
+            android:text="王二小" />
+
+        <TextView
+            android:id="@+id/phoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contactIn"
+            android:layout_alignTop="@+id/contactIn"
+            android:layout_toLeftOf="@+id/phoneNoIn"
+            android:gravity="center"
+            android:text="联系电话" />
+
+        <TextView
+            android:id="@+id/phoneNoIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/phoneNo"
+            android:layout_alignLeft="@+id/reportNo"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/phoneNo"
+            android:gravity="center"
+            android:text="18262288787" />
+
+        <TextView
+            android:id="@+id/governorNoIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/governorNo"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/governorNo"
+            android:layout_toRightOf="@+id/governorNo"
+            android:gravity="center"
+            android:text="50098" />
+
+        <TextView
+            android:id="@+id/produceTimeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/produceTime"
+            android:layout_alignTop="@+id/produceTime"
+            android:layout_alignLeft="@+id/governorSpecIn"
+            android:layout_alignRight="@+id/governorSpecIn"
+            android:gravity="center"
+            android:text="20150523" />
+
+        <TextView
+            android:id="@+id/produceUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/produceTimeIn"
+            android:layout_alignLeft="@+id/governorNo"
+            android:layout_toLeftOf="@+id/phoneNoIn"
+            android:gravity="center"
+            android:text="制造单位" />
+
+        <TextView
+            android:id="@+id/produceUnitIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/produceUnit"
+            android:layout_alignBottom="@+id/produceUnit"
+            android:layout_alignLeft="@+id/governorNoIn"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="江苏无锡电梯有限公司" />
+
+        <TextView
+            android:id="@+id/speedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/speed"
+            android:layout_alignLeft="@+id/produceTimeIn"
+            android:layout_alignRight="@+id/produceTimeIn"
+            android:layout_alignTop="@+id/speed"
+            android:gravity="center"
+            android:text="69" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/speedIn"
+            android:layout_alignLeft="@+id/produceUnit"
+            android:layout_alignTop="@+id/speedIn"
+            android:layout_toLeftOf="@+id/phoneNoIn"
+            android:gravity="center"
+            android:text="操纵的安全钳装置的类型" />
+
+        <TextView
+            android:id="@+id/typeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/type"
+            android:layout_alignLeft="@+id/produceUnitIn"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/type"
+            android:gravity="center"
+            android:text="不可脱式" />
+
+        <TextView
+            android:id="@+id/produceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/speed"
+            android:layout_below="@+id/governorSpec"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="制造日期" />
+
+        <TextView
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/produceTimeIn"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/speedIn"
+            android:gravity="center"
+            android:text="配用的电梯额定速度（m/s）" />
+
+        <TextView
+            android:id="@+id/guiFanIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/yiJu"
+            android:layout_alignBottom="@+id/yiJu"
+            android:layout_toRightOf="@+id/yiJu"
+            android:gravity="center"
+            android:text="《电梯制造与安装安全规范》(GB 7588-2003)" />
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/speed"
+            android:layout_below="@+id/guiFanIn"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="主要校验仪器设备" />
+
+        <TextView
+            android:id="@+id/yiJu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/speed"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@+id/speedIn"
+            android:gravity="center"
+            android:text="校验依据" />
+
+        <TextView
+            android:id="@+id/deviceNameIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/deviceName"
+            android:layout_alignLeft="@+id/guiFanIn"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/deviceName"
+            android:gravity="center"
+            android:text="校验
+            设备" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/deviceName"
+            android:layout_marginTop="14dp"
+            android:layout_toLeftOf="@+id/resultIn"
+            android:gravity="center"
+            android:text="校验结论" />
+
+        <TextView
+            android:id="@+id/resultIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/result"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/deviceName"
+            android:gravity="center"
+            android:text="合格" />
+
+        <TextView
+            android:id="@+id/governorNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phoneNo"
+            android:layout_below="@+id/phoneNo"
+            android:layout_marginTop="31dp"
+            android:layout_toLeftOf="@+id/phoneNoIn"
+            android:gravity="center"
+            android:text="限速器产品编号" />
+
+        <TextView
+            android:id="@+id/governorSpecIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/governorNo"
+            android:layout_alignBottom="@+id/governorNo"
+            android:layout_toLeftOf="@+id/governorNo"
+            android:layout_toRightOf="@+id/governorSpec"
+            android:gravity="center"
+            android:text="无" />
+
+        <TextView
+            android:id="@+id/governorSpec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/governorSpecIn"
+            android:layout_alignBottom="@+id/governorSpecIn"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="限速器型号\n规格" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/governorSpec"
+            android:layout_below="@+id/addressIn"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="委托单位\n联系人" />
+
+        <TextView
+            android:id="@+id/beiZhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/result"
+            android:layout_below="@+id/result"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="备注" />
+
+        <TextView
+            android:id="@+id/beiZhuIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/beiZhu"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/beiZhu"
+            android:gravity="center"
+            android:text="无" />
+        <TextView
+            android:id="@+id/checkName"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/beiZhu"
+            android:layout_below="@+id/beiZhu"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="校验人员" />
+
+        <TextView
+            android:id="@+id/checkNameIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkName"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/checkName"
+            android:gravity="center"
+            android:text="王二小" />
+        <TextView
+            android:id="@+id/bianZhi"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/checkName"
+            android:layout_marginTop="16dp"
+            android:layout_alignRight="@+id/speed"
+            android:gravity="center"
+            android:text="编制" />
+
+        <TextView
+            android:id="@+id/bianZhiIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bianZhi"
+            android:layout_toRightOf="@+id/bianZhi"
+            android:layout_alignRight="@+id/speedIn"
+            android:layout_alignTop="@+id/bianZhi"
+            android:gravity="center"
+            android:text="自动生成" />
+        <TextView
+            android:id="@+id/riQi1"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bianZhiIn"
+            android:layout_alignTop="@+id/bianZhiIn"
+            android:layout_alignRight="@+id/type"
+            android:layout_toRightOf="@+id/bianZhiIn"
+            android:gravity="center"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/riQiIn1"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/riQi1"
+            android:layout_alignTop="@+id/riQi1"
+            android:layout_alignRight="@+id/typeIn"
+            android:layout_toRightOf="@+id/riQi1"
+            android:gravity="center"
+            android:text="150623" />
+        <TextView
+            android:id="@+id/shenHe"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bianZhi"
+            android:layout_marginTop="16dp"
+            android:layout_alignRight="@+id/bianZhi"
+            android:gravity="center"
+            android:text="审核" />
+
+        <TextView
+            android:id="@+id/shenHeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shenHe"
+            android:layout_toRightOf="@+id/shenHe"
+            android:layout_alignTop="@+id/shenHe"
+            android:layout_alignRight="@+id/speedIn"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:id="@+id/riQi2"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shenHeIn"
+            android:layout_alignTop="@+id/shenHeIn"
+            android:layout_toRightOf="@+id/shenHeIn"
+            android:layout_alignRight="@+id/type"
+            android:gravity="center"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/riQiIn2"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/riQi2"
+            android:layout_alignTop="@+id/riQi2"
+            android:layout_toRightOf="@+id/riQi2"
+            android:layout_alignRight="@+id/typeIn"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:id="@+id/piZhun"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/shenHe"
+            android:layout_alignRight="@+id/shenHe"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="审核" />
+
+        <TextView
+            android:id="@+id/piZhunIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/piZhun"
+            android:layout_toRightOf="@+id/piZhun"
+            android:layout_alignTop="@+id/piZhun"
+            android:layout_alignRight="@+id/speedIn"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:id="@+id/riQi3"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/piZhunIn"
+            android:layout_alignTop="@+id/piZhunIn"
+            android:layout_toRightOf="@+id/piZhunIn"
+            android:layout_alignRight="@+id/type"
+            android:gravity="center"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/riQiIn3"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/riQi3"
+            android:layout_alignTop="@+id/riQi3"
+            android:layout_toRightOf="@+id/riQi3"
+            android:layout_alignRight="@+id/typeIn"
+            android:gravity="center"
+            android:text="" />
+        <TextView
+            android:id="@+id/xiangMu"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/speedIn"
+            android:layout_below="@+id/piZhun"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="校验项目" />
+
+        <TextView
+            android:id="@+id/jieGuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/xiangMu"
+            android:layout_alignLeft="@+id/riQi3"
+            android:layout_alignRight="@+id/riQi3"
+            android:layout_toRightOf="@+id/xiangMu"
+            android:layout_alignTop="@+id/xiangMu"
+            android:gravity="center"
+            android:text="结果" />
+        <TextView
+            android:id="@+id/jieLun"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jieGuo"
+            android:layout_alignTop="@+id/jieGuo"
+            android:layout_toRightOf="@+id/jieGuo"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="结论" />
+        <TextView
+            android:id="@+id/car"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/xiangMu"
+            android:layout_alignRight="@+id/xiangMu"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="操纵轿厢安全钳的限速器的机械动作速度（m/s）" />
+
+        <TextView
+            android:id="@+id/jieGuo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/car"
+            android:layout_toRightOf="@+id/car"
+            android:layout_alignTop="@+id/car"
+            android:layout_alignLeft="@+id/riQi3"
+            android:layout_alignRight="@+id/riQi3"
+            android:gravity="center"
+            android:text="3/7" />
+        <TextView
+            android:id="@+id/jieLun1"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jieGuo1"
+            android:layout_alignTop="@+id/jieGuo1"
+            android:layout_toRightOf="@+id/jieGuo1"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="合格" />
+        <TextView
+            android:id="@+id/counter"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/car"
+            android:layout_below="@+id/car"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="操纵对重（或平衡重）安全钳的限速器的机械动作速度（m/s）" />
+
+        <TextView
+            android:id="@+id/jieGuo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/counter"
+            android:layout_toRightOf="@+id/counter"
+            android:layout_alignTop="@+id/counter"
+            android:layout_alignLeft="@+id/riQi3"
+            android:layout_alignRight="@+id/riQi3"
+            android:gravity="center"
+            android:text="6/9" />
+        <TextView
+            android:id="@+id/jieLun2"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jieGuo2"
+            android:layout_alignTop="@+id/jieGuo2"
+            android:layout_toRightOf="@+id/jieGuo2"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="合格" />
+        <TextView
+            android:id="@+id/over"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/counter"
+            android:layout_alignRight="@+id/car"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="作为轿厢上行超速保护装置的限速器机械动作速度（m/s）" />
+
+        <TextView
+            android:id="@+id/jieGuo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/over"
+            android:layout_toRightOf="@+id/over"
+            android:layout_alignTop="@+id/over"
+            android:layout_alignLeft="@+id/riQi3"
+            android:layout_alignRight="@+id/riQi3"
+            android:gravity="center"
+            android:text="3/5" />
+        <TextView
+            android:id="@+id/jieLun3"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jieGuo3"
+            android:layout_alignTop="@+id/jieGuo3"
+            android:layout_toRightOf="@+id/jieGuo3"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="合格" />
+        
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
